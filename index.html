@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Score-Keeper-App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Score-Keeper-App</h1>
+  <div class="container">
+    <div class="team" id="team1">
+      <div class="logo"><img src="https://logodownload.org/wp-content/uploads/2017/02/manchester-city-fc-logo-escudo-badge.png" alt="Manchester City Logo"></div>
+      <h2>Manchester City</h2>
+      <div class="score" id="score1">0</div>
+      <button class="goal" onclick="incrementScore('score1')">GOAL</button>
+      <div class="fouls" id="foul1">0</div>
+      <button class="foul" onclick="incrementFoul('foul1')">FOUL</button>
+    </div>
+    <div class="vertical-line"></div>
+    <div class="team" id="team2">
+      <div class="logo"><img src="https://th.bing.com/th/id/OIP.R8sOWFWWkisq3h4bLVQQ9QHaKC?rs=1&pid=ImgDetMain" alt="Liverpool Logo"></div>
+      <h2>Liverpool</h2>
+      <div class="score" id="score2">0</div>
+      <button class="goal" onclick="incrementScore('score2')">GOAL</button>
+      <div class="fouls" id="foul2">0</div>
+      <button class="foul" onclick="incrementFoul('foul2')">FOUL</button>
+    </div>
+  </div>
+ <button class="reset" onclick="resetScores()">RESET</button>
+  <script src="script.js"></script>
+  
+</body>
+</html>
